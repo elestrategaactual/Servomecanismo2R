@@ -1,0 +1,17 @@
+%{
+    Traslada la posición dentro del trebol en
+    coordenadas polares, a coordenadas cartesianas
+    con origen en la ubicación del eslabón fijo.
+
+    @param  lcx, y l
+    @return Devuelve las posiciones angulares de los
+            eslabones, q1 corresponde a la posición
+            angular del primer eslabón en radianes;
+            mientras que q2 será la posición angular
+            del segundo eslabón respecto a q1. Buscando
+            la trayectoria más óptima de desplazamiento.
+%}
+
+function[x,y]=Totrigen(lcx,lcy,theta,r)
+x=lcx+r*cos(theta);
+y=lcy+rsen(theta);

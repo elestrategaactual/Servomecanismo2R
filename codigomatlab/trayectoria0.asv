@@ -18,6 +18,5 @@
 function[r,theta]=trayectoria0(rotacion,lmin, factor,es,hojas,n)
 theta=linespace(0,2*pi,n);
 rotacion = ((rotacion+(pi/4))/(pi/4));  %Normalizamos la rotación entre 0 y 2
-diagonalLmin = sqrt(((lmin/2)^2)+((lmin/2)^2)); %Encontramos la diagonal del cuadrado base
-abase = (diagonalLmin/2)/(1+es);    %Encontramos el parámetro a base
-r=(factor*abase)*(es+sin(hojas*theta+rotacion*pi));
+abase = 
+r=(factor/es)*(es+sin(hojas*theta+rotacion*pi));
