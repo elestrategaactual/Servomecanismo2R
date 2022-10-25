@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="zulet" on="10/25/22||01:46:50" using="Simscape Multibody Link Version 7.4" from="Autodesk Inventor 2021 (Build 250183000, 183)"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="centimeter"/>
+<RootAssembly name="simulink.iam" uid="simulink.iam_{A547DE6A-40EA-BA8D-F3ED-22859370316D}" version="{EA56D76B-652B-6502-9DB4-D82EE4E80453}">
+<AssemblyFile name="simulink.iam" type="Inventor Assembly"/>
+<InstanceTree>
+<Instance name="bancada:1" grounded="true" uid="bancada:1" entityUid="bancada.ipt_{0940E215-44CC-771B-4587-139C5B2005D2}">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-6.389405424509409 -0.38567878465342487 -2.4999999999999991</Translation>
+</Transform>
+</Instance>
+<Instance name="eslabon1:1" uid="eslabon1:1" entityUid="eslabon1.ipt_{10A427CC-4CC1-4513-D81A-C283C30B3F61}">
+<Transform>
+<Rotation>0.27167215436548831 0 -0.96238985891499051 -0.96238985891499051 0 -0.27167215436548831 0 1 0</Rotation>
+<Translation>-6.3894054245094107 1.1143212153465738 2.5000000000000009</Translation>
+</Transform>
+</Instance>
+<Instance name="eslabon2:1" uid="eslabon2:1" entityUid="eslabon2.ipt_{10428C64-45B8-C744-AFDB-3DBB46402ABB}">
+<Transform>
+<Rotation>0.614713391958843 0 0.78875055990246901 -0.78875055990246901 0 0.614713391958843 0 -1 0</Rotation>
+<Translation>-11.551176357453688 19.399728534731395 2.4000000000000021</Translation>
+</Transform>
+</Instance>
+<Instance name="Marcador:1" uid="Marcador:1" entityUid="Marcador.ipt_{8AB840A5-407A-C3DE-C838-24B0474AD80F}">
+<Transform>
+<Rotation>0.61471339195884289 0.78875055990246878 0 -0.78875055990246878 0.61471339195884289 0 0 0 1</Rotation>
+<Translation>-18.679509542572255 13.844256254903351 2.4000000000000021</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+</Constraints>
+<Joints>
+<Revolute name="Rotational:1">
+<BaseFrame>
+<InstancePath>
+<Uid>bancada:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>0 -1 0 -1 0 0 0 0 -1</Rotation>
+<Translation>0 1.5 5</Translation>
+</Transform>
+</BaseFrame>
+<FollowerFrame>
+<InstancePath>
+<Uid>eslabon1:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>0 1 0 0 0 -1 -1 0 0</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</FollowerFrame>
+</Revolute>
+<Revolute name="Rotational:2">
+<BaseFrame>
+<InstancePath>
+<Uid>eslabon1:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>0 1 0 0 0 -1 -1 0 0</Rotation>
+<Translation>-19 -0.10000000000000009 2.3314683517128287e-15</Translation>
+</Transform>
+</BaseFrame>
+<FollowerFrame>
+<InstancePath>
+<Uid>eslabon2:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>-1 0 0 0 0 1 0 1 0</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</FollowerFrame>
+</Revolute>
+<Weld name="Rigid:1">
+<BaseFrame>
+<InstancePath>
+<Uid>eslabon2:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>-1 0 0 0 0 -1 0 -1 0</Rotation>
+<Translation>-2.2043642384652354e-15 0 -18</Translation>
+</Transform>
+</BaseFrame>
+<FollowerFrame>
+<InstancePath>
+<Uid>Marcador:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>0 0 0 0 0 0 0 0 1</Rotation>
+<Translation>0 -8.9624999999999986 0</Translation>
+</Transform>
+</FollowerFrame>
+</Weld>
+</Joints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="bancada.ipt" uid="bancada.ipt_{0940E215-44CC-771B-4587-139C5B2005D2}" version="{2F7A11A5-C8C6-12D4-AB8A-EB5D5462B0CE}">
+<PartFile name="bancada.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>0.016508590110523573</Mass>
+<CenterOfMass>-3.7311241795615473e-10 1.15926829836218 2.628053194273261</CenterOfMass>
+<Inertia>0.053046104367189914 0.05497180176979654 0.033290652266907826 -0.00072029921778704424 -1.4043406871507996e-12 2.0987609037170423e-12</Inertia>
+</MassProperties>
+<GeometryFile name="bancada_ipt_d7a4bb1.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="eslabon1.ipt" uid="eslabon1.ipt_{10A427CC-4CC1-4513-D81A-C283C30B3F61}" version="{C676696C-A6D6-4572-A777-9FD84ADE9A66}">
+<PartFile name="eslabon1.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>0.021590543833357789</Mass>
+<CenterOfMass>-9.7905331992425619 0.52320651716865452 0.0004026062684990173</CenterOfMass>
+<Inertia>0.0047095655835160243 0.75455834797674237 0.75370345980724918 2.0172237868104539e-07 1.8173029865143297e-05 0.0025352873647325395</Inertia>
+</MassProperties>
+<GeometryFile name="eslabon1_ipt_cfc9528f.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.92156862745098034" g="0.92156862745098034" b="0.92156862745098034" a="1"/>
+<Diffuse r="0.92156862745098034" g="0.92156862745098034" b="0.92156862745098034" a="1"/>
+<Specular r="1" g="1" b="1" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.51500000000000001</Shininess>
+</VisualProperties>
+</Part>
+<Part name="eslabon2.ipt" uid="eslabon2.ipt_{10428C64-45B8-C744-AFDB-3DBB46402ABB}" version="{C7306635-9833-1784-E34F-7A651BF546A6}">
+<PartFile name="eslabon2.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>0.019944745319390646</Mass>
+<CenterOfMass>-0.00061905222722496284 0.5 -8.3152466527342295</CenterOfMass>
+<Inertia>0.65384856779811229 0.6548946068907544 0.004370163312540319 0 0.00010266701968397229 0</Inertia>
+</MassProperties>
+<GeometryFile name="eslabon2_ipt_7792fc44.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Marcador.ipt" uid="Marcador.ipt_{8AB840A5-407A-C3DE-C838-24B0474AD80F}" version="">
+<ModelUnits mass="lbmass" length="inch"/>
+<PartFile name="Marcador.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>0.024437663854110583</Mass>
+<CenterOfMass>1.8299402084683349e-10 -8.9624999999999986 0</CenterOfMass>
+<Inertia>0.21489356472736063 0.21489356351918118 0.0093550425900621129 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Marcador_ipt_b15af358.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
