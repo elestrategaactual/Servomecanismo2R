@@ -209,12 +209,10 @@ void setMotor(int motor, int vel, bool dir) {
   } else if (motor == 2) {
     digitalWrite(EN2, HIGH);
     if (dir) {
-      //motorController2.TurnRight(vel);
       analogWrite(LPWM2, 0);
       analogWrite(RPWM2, 0);
       analogWrite(RPWM2, vel);
     } else {
-      //motorController2.TurnLeft(vel);
       analogWrite(LPWM2, 0);
       analogWrite(RPWM2, 0);
       analogWrite(LPWM2, vel);

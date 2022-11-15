@@ -23,3 +23,5 @@ diagonalLmin = sqrt(((lmin/2)^2)+((lmin/2)^2)); %Encontramos la diagonal del cua
 thetaMax = 52.5*pi/180;
 abase = (lmin/2)/(sin(thetaMax)*(es+cos(4*thetaMax+pi)));
 r=(factor*abase)*(es+cos(hojas*theta+rotacion*pi));
+factor*abase
+end
