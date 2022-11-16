@@ -1,0 +1,44 @@
+
+    //Motor 1
+    Serial.print(currentMillis / 1000.0, DEC);
+    Serial.print(",");
+    Serial.print(Ref1, DEC);
+    Serial.print(",");
+    Serial.print("angle: ");
+    Serial.print(posicion, DEC);
+    Serial.print(",");
+    Serial.print("E: ");
+    Serial.print(E1, DEC);
+    Serial.print(",");
+    Serial.print("s: ");
+    Serial.print(sentido1, DEC);
+    Serial.print(",");
+    Serial.print("pwmC: ");
+    Serial.print(CmdP, DEC);
+    Serial.print(",");
+    Serial.print("PWM: ");
+    Serial.println(pwmDuty, DEC);
+
+    //delay(1000);
+
+    //Motor 2
+    Serial.print("Motor 2");
+    Serial.print(",");
+    Serial.print(Ref2, DEC);
+    Serial.print(",");
+    Serial.print("angle2: ");
+    Serial.print(posicion2, DEC);
+    Serial.print(",");
+    Serial.print("E: ");
+    Serial.print(E2, DEC);
+    Serial.print(",");
+    Serial.print("s: ");
+    Serial.print(sentido2, DEC);
+    Serial.print(",");
+    Serial.print("pwmC: ");
+    Serial.print(CmdP2, DEC);
+    Serial.print(",");
+    Serial.print("PWM: ");
+    Serial.println(pwmDuty2, DEC);
+
+    delay(1000);
